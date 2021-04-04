@@ -1,0 +1,34 @@
+When you open a new tab, this will show you the League of Legends LOL wallpaper
+
+Includes a nice Clock so you can actually use this as a screensaver
+
+The side bar provides link to common LOL utilities
+
+Wallpapers are randomized everytime you open a new tab
+
+You can click Next Photo to cycle through other wallpapers
+
+Wallpaper list : 
+Project Yasuo
+Project Zed
+Project Yi
+Project Leona
+Project Katarina
+Project Lucian
+Project Ekko
+Project Vi
+Project Fiora
+Project Jhin
+Project Vayne
+Project Ashe
+Updated:
+Project Akali
+Project Irelia
+Project Jinx
+Project Pyke
+Project Warwick
+
+
+
+
+This Chrome Extension was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.

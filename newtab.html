@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tab</title>
+  </head>
+
+<div id="background">
+<div class="noSelect">
+    <div id="box">	
+	    <div id="clockbox" style="font-weight:bold; text-align:center; font-size:150px; color: white; position: fixed;
+	         top: 10px; margin-left: 34%"></div>
+		<div id="clockbox"></div>
+        <div class="title"></div>
+        <div class="text" id="text-box">shouldnt be seeing this</div>
+		<div class="disclaimer" id="disclaimer">This Chrome Extension was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.</div>
+        <div class="button" id="my-button"><span>Next photo </span></div>
+    	<div id="mySidenav" class="sidenav">
+			<a id="close" class="closebtn" ">&times;</a>
+			<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+			<a href="https://www.mobafire.com/" target="_blank">Mobafire</a>
+			
+		</div>
+    </div>
+
+	<span id="hi" style="font-size:30px;cursor:crosshair">&#9776; </span>
+</div>
+</div>
+
+  <style>
+  html, body {
+    height: 100%;
+	background-color: black;
+}
+
+#background {
+    height: 100%;
+	width: 100%;
+
+}
+#hi{
+	position: fixed;
+	top: 10px;
+	float: left;
+	color: white;
+}
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#box {   
+    width: 100%;
+    min-width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    position: relative;
+
+}
+.title {
+    width: 100%;
+    height: 9%;
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height:50px;
+	
+}
+.text {  
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+	color: white;
+    position: fixed;
+	bottom: 30px;
+}
+.disclaimer {  
+    width: 300px;
+    height: 40px;
+    float: right;
+    text-align: center;
+    font-size: 9px;
+	color: white;
+    position: fixed;
+	bottom: 1px;
+}
+
+.button {
+
+	position: fixed;
+	bottom: 12px;
+	width: 80px;
+	margin-left: 47%;
+    float: left;
+    text-align: center;
+	cursor: crosshair;
+	padding: 5px 5px 5px;
+	border-radius: 6px;	
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	transition: all 0.5s;
+}
+.button span {
+  cursor: crosshair;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 15px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	cursor: crosshair;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	cursor: crosshair;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+	cursor: crosshair;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	cursor: crosshair;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+  </style>
+  
+ 
+<script src="time.js"></script>
+  
+<script src="randompic.js"></script>
+  
+<script src="sidebar.js"></script>
+  
+</html>
