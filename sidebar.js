@@ -5,6 +5,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-console.log("LOL")
-document.getElementById("hi").addEventListener("click",openNav);
-document.getElementById("close").addEventListener("click",closeNav);
+
+document.getElementById("hi").addEventListener("click", openNav);
+document.getElementById("close").addEventListener("click", closeNav);
