@@ -2,7 +2,7 @@
  "manifest_version": 3,
  "name": "New Tab League of Legends",
  "description": "Chrome extension",
- "version": "4",
+ "version": "6",
  "author": "phuazaiwei",
 "action": {
    "default_icon": "tab-icon.png",
@@ -10,6 +10,5 @@
  },
 "chrome_url_overrides" : {
   "newtab": "newtab.html"
-},
- "permissions": ["activeTab"]
+}
 }
